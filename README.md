@@ -30,8 +30,17 @@ This Python script allows you to transcribe audio and video files using the Wit.
    3. Install ffmpeg:
 
 - For Windows:
-  - Download the ffmpeg build from the official website: [ffmpeg.org](https://ffmpeg.org/download.html)
-  - Extract the downloaded archive and add the `bin` directory to your system's PATH environment variable.
+  
+  - *Method 1* : Normal installation
+     - Download python if you don't have it : [python.org](https://www.python.org/downloads/)
+     - Download the ffmpeg build from the official website: [ffmpeg.org](https://ffmpeg.org/download.html)
+     - Extract the downloaded archive and add the `bin` directory to your system's PATH environment variable.
+  - *Method 2* : Using Winget if you already have it installed
+    
+     - using winget by command line :
+     ```
+     winget install python ffmpeg
+     ```
 
 - For macOS (using Homebrew):
   ```
