@@ -26,25 +26,41 @@ This Python script allows you to transcribe audio and video files using the Wit.
 1. Clone the repository:
    git clone https://github.com/marouane53/transcribe.git
 
-2. Install the required Python packages:
-   3. Install ffmpeg:
+2. Install the required Python package & Install ffmpeg:
 
 - For Windows:
-  - Download the ffmpeg build from the official website: [ffmpeg.org](https://ffmpeg.org/download.html)
-  - Extract the downloaded archive and add the `bin` directory to your system's PATH environment variable.
-
+  
+   - Method 1 Normal installing:
+      - Download python from the official website: [python.org](https://www.python.org/downloads/)
+      - Download the ffmpeg build from the official website: [ffmpeg.org](https://ffmpeg.org/download.html)
+      - Extract the downloaded archive and add the `bin` directory to your system's PATH environment variable.
+        
+   - Method 2 Using Winget:
+   ```
+     winget install python ffmpeg
+     ```
+   
 - For macOS (using Homebrew):
   ```
-  brew install ffmpeg
+  brew install python ffmpeg
   ```
 
-- For Linux (using apt):
-  ```
-  sudo apt update
-  sudo apt install ffmpeg
-  ```
-
-4. Install yt-dlp:
+- For Linux (Debian):
+   ```
+   sudo apt update
+   sudo apt install python ffmpeg
+   ```
+- For Linux (Redhat):
+   ```
+   sudo dnf update
+   sudo dnf install python ffmpeg
+   ```
+ - For Linux (Archlinux):
+   ```
+   sudo pacman -Syu
+   sudo pacman -S python ffmpeg
+   ```
+3. Install yt-dlp:
 
 - For Windows:
   ```
@@ -56,7 +72,7 @@ This Python script allows you to transcribe audio and video files using the Wit.
   sudo pip install yt-dlp
   ```
 
-5. Set up Wit.ai API keys:
+4. Set up Wit.ai API keys:
 
 - Sign up for a Wit.ai account at [wit.ai](https://wit.ai/) if you don't have one.
 - Create a new app for each language you want to transcribe.
